@@ -1,0 +1,9 @@
+Options All -Indexes
+
+ErrorDocument 404 404
+ErrorDocument 403 404
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+	RewriteRule ^logando /api/login.php
+</IfModule>
