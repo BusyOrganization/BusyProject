@@ -3,8 +3,9 @@
 require_once 'core/config.php';
 require_once 'core/sistema.php';
 
-// Criar instância da classe nucleo //
-$busy = new Nucleo($db,$dominio);
+// Criar instância da classe nucleo & busy //
+$nucleo = new Nucleo($db,$dominio);
+$busy = new Busy($db,$dominio);
 
 // Verificações //
 $busy->verificarSessao(false);
