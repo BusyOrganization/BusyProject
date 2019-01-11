@@ -1,6 +1,28 @@
 <?php
 
 class Nucleo {
+	public $db;
+	public $dominio;
+	
+	function __construct($db,$dominio) {
+		$this->db = $db;
+		$this->dominio = $dominio;
+	}
+	
+	public function minhaUrl() {
+		return $this->dominio;
+	}
+	
+	public function gerarSessaoID() {
+		return substr(md5(time()),0,10);
+	}
+	
+	public function finalizarSessao() {
+		session_destroy();
+		header('Location: '.$this->dominio.'/entrar');
+		exit;
+	}
+	
 	public function critografarSenha($senha) {
 		return password_hash($senha, PASSWORD_DEFAULT);
 	}
