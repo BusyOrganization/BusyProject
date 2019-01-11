@@ -1,7 +1,4 @@
 <?php
-// Requere o arquivo de configuracoes //
-require_once 'core/config.php';
-
 // Variavel global //
 $global_a = 202;
 

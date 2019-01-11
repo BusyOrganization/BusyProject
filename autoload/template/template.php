@@ -11,15 +11,16 @@
 // Variavel Página, serve para buscar no template // 
 $page = null;
 $arquivo = null;
+
 // Verifica se tem a variavel global //
 if(isset($global_a)){
-	if(empty($_COOKIE['iduser'])){
+	if(empty($_COOKIE['user_id'])){
 		$page = 'home';
 		$arquivo = 'index';
-	}
-	else{
+	} else {
 		$page = 'dashboard';
 		$arquivo = 'index';
 	}
+	
 	include 'page/'. $page . '/' . $arquivo . '.php';
 }
