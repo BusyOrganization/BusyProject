@@ -4632,7 +4632,7 @@ h2 {
     .cta-wrapper {
         position:absolute;
         top: auto;
-        bottom: 0px
+        bottom: -10px
     }
 
     .cta-wrapper .cta-link-wrapper .btn {
@@ -5878,7 +5878,7 @@ h2 {
 
 @media (max-width: 440px) {
     .bzHeader .authLinks {
-        margin-top:15px;
+        margin-top:9px;
         font-size: 15px;
         padding: 5px 15px
     }
