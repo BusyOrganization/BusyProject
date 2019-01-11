@@ -3,7 +3,7 @@
 require_once 'core/config.php';
 
 // Variavel global //
-$global_a = 202;
+$global = 202;
 
-// Require o autoload - Páginas html, e tal //
+// Requere o autoload - Páginas html, e tal //
 require_once 'autoload/template/autoload.php';
