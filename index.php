@@ -4,7 +4,7 @@ require_once 'core/config.php';
 require_once 'core/sistema.php';
 
 // Criar instância da classe nucleo //
-$nucleo = new Nucleo();
+$nucleo = new Nucleo($db,$dominio);
 
 // Variavel global //
 $global = 202;
